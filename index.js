@@ -1,5 +1,4 @@
 const clientId = "m6DvXYMK6CTwN13XidkB2GMc0YIgxv31Pzso4k6xzYw"
-const endpoint = `https://api.unsplash.com/photos/random/orientation=landscape&query=nature?client_id=m6DvXYMK6CTwN13XidkB2GMc0YIgxv31Pzso4k6xzYw`
 const appId = "d771992cc2392869ed7cd876cea0c445"
 
 // UNSPLASH API - BACKGROUND IMAGES
@@ -7,6 +6,7 @@ fetch(`https://api.unsplash.com/photos/random/?client_id=${clientId}&orientation
     .then(res => res.json())
     .then(data => {
         document.body.style.backgroundImage = `url(${data.urls.regular})`
+
 		document.getElementById("author").textContent = `Photo by: ${data.user.name}`
     })
     .catch(err => {
