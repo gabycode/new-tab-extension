@@ -17,10 +17,10 @@ fetch(`https://api.unsplash.com/photos/random/?client_id=${clientId}&orientation
 
 
 // GO QUOTES API - RANDOM QUOTES
-fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
+fetch("https://programming-quotes-api.herokuapp.com/Quotes/random")
     .then(res => res.json())
     .then(data => {
-        document.getElementById("quote").textContent = `${data.quotes[0].text}`
+        document.getElementById("quote").textContent = `${data.en}`
     })
 
 
