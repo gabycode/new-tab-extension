@@ -53,7 +53,7 @@ main {
 .weather {
     display: flex;
     align-self: center;
-    background-color: #2c2f4a29;
+    /* background-color: #2c2f4a29; */
     font-weight: 700;
     padding: .7em;
     border-radius: 5px;
