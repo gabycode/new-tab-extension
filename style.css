@@ -29,7 +29,7 @@ main {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: -10em;
+    margin-top: -8em;
     padding: 2em;
     border-radius: 10px;
 }
@@ -48,7 +48,9 @@ main {
 }
 
 .quote {
-    font-size: 1.2rem;
+    padding-top: 1em;
+    font-size: 1.4rem;
+    font-weight: 500;
     text-align: center;
     text-shadow: 0px 5px 5px #000;
 }
@@ -57,7 +59,7 @@ main {
 /* WEATHER */
 .weather {
     display: flex;
-    align-self: center;
+    align-self: flex-end;
     /* background-color: #2c2f4a29; */
     font-weight: 700;
     padding: .7em;
@@ -70,18 +72,18 @@ main {
 }
 
 .icon-temp img {
-    width: 60px;
+    width: 40px;
     height: 100%;
     margin: 0;
 }
 
 .weather-temp {
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .weather-city {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -92,5 +94,5 @@ p#author {
     align-self: flex-start;
     padding: 1em;
     background-color: #24242473;
-    border-radius: 10px;
+    border-radius: 2px;
 }
